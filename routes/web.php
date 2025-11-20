@@ -6,7 +6,15 @@ use App\Http\Controllers\FrontendController;
 
 Route::get('/', [FrontendController::class, 'index'])->name('home');
 Route::get('/product/{id}', [FrontendController::class, 'product'])->name('product.view');
-    
+
+Route::get('/products', function () {
+    return view('products');
+})->name('products');
+
+Route::get('/products', function () {
+    return view('products');
+});
+
 
 
 Route::get('/dashboard', function () {

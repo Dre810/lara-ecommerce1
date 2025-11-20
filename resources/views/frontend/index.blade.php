@@ -20,6 +20,12 @@
 
     <div style="width: 90%; margin: 0 auto; padding-top: 30px;">
         <h2>Latest Products</h2>
+        <p>Check out our newest arrivals!</p>
+
+    
+
+
+
         <div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
             @foreach($products as $product)
@@ -34,6 +40,7 @@
                     </a>
                 </div>
             @endforeach
+            
 
         </div>
     </div>
